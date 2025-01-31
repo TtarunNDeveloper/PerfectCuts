@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow1">
+    <RelativeLayout
+        android:id="@+id/stockinc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/yellow">
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pname"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pamt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pId"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text=""
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pcateg"
+                android:layout_below="@+id/pamt"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text=""
+                android:textColor="@color/black"/>
+            <NumberPicker
+                android:id="@+id/pstock"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pstock"
+                android:layout_marginStart="145dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Quantity"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:id="@+id/addstock"
+                android:layout_below="@+id/pstock"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:text="AddStock"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/pimage"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Signup">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logoclean"/>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="90dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black">
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:id="@+id/logSign"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:text="SIGNUP"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/logSign"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/proflogo"
+            android:src="@drawable/baseline_person_pin_24"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/uname"
+            android:hint="ENTER USERNAME"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/proflogo"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/uname"
+            android:layout_centerInParent="true"
+            android:hint="ENTER PASSWORD"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/veriPass"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pass"
+            android:layout_centerInParent="true"
+            android:hint="VERIFY PASSWORD"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mailId"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/veriPass"
+            android:layout_centerInParent="true"
+            android:hint="ENTER EMAIL ADDRESS"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/phoNo"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mailId"
+            android:layout_centerInParent="true"
+            android:hint="ENTER PHONE NUMBER"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/addRess"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/phoNo"
+            android:layout_centerInParent="true"
+            android:hint="ENTER YOUR ADDRESS"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/addRess"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/yellow"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="SIGNUP" />
+        <Button
+            android:id="@+id/cancl"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/addRess"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="160dp"
+            android:backgroundTint="@color/yellow"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="CLEAR" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/cancl"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/yellow"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="GO BACK" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

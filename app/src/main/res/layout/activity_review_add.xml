@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:fadingEdge="horizontal"
+    android:fadingEdgeLength="10dp"
+    android:background="@color/yellow1"
+    tools:context=".ReviewAdd">
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/viewpager"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cate"
+        android:textStyle="bold"
+        android:text="Category: "
+        android:layout_below="@+id/quantity"/>
+    <TextView
+        android:id="@+id/Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewpager"
+        android:layout_marginTop="16dp"
+        android:text="Product ID: "
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Id"
+        android:layout_marginTop="8dp"
+        android:text="Product Name: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_marginTop="8dp"
+        android:text="Product Description: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Desc"
+        android:layout_marginTop="8dp"
+        android:text="Product Price: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Sizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Price"
+        android:layout_marginTop="8dp"
+        android:text="Product Sizes: "
+        android:textStyle="bold"/>
+    <NumberPicker
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/quantity"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/Sizes"
+        android:layout_marginStart="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textStyle="bold"
+        android:layout_below="@+id/Sizes"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="40dp"/>
+    <Button
+        android:id="@+id/radd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_marginStart="150dp"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="ADD"/>
+</RelativeLayout>

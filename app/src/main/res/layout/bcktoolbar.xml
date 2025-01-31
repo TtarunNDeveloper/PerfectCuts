@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@color/yellow"
+    android:padding="20dp"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bckbtn"
+        android:src="@drawable/baseline_arrow_back_ios_24"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/shopcart"
+        android:layout_marginStart="320dp"
+        android:src="@drawable/baseline_shopping_cart_24"/>
+</LinearLayout>

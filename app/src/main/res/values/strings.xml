@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BCP</string>
+    <string name="navigation_open">Open</string>
+    <string name="navigation_close">Close</string>
+    <string-array name="category_options">
+        <item>Men</item>
+        <item>Women</item>
+        <item>Boys</item>
+        <item>Girls</item>
+    </string-array>
+    <string name="spinner_hint">Category</string>
+    <string name="rs_symbol">₹</string>
+    <string name="payment">**As Of Now Only COD Available**</string>
+</resources>
